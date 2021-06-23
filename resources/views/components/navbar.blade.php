@@ -1,0 +1,122 @@
+<nav class="">
+    <div class="first_nav w-full">
+        <div class="container mx-auto flex justify-between">
+
+            <div class="nav-col-1 flex items-center">
+                <div class="social-icons">
+                    <ul class="flex">
+                        <a href=""><li class="flex items-center justify-center"><span class="iconify" data-icon="mdi-telegram" data-inline="false"></span></li></a>
+                        <a href=""><li class="flex items-center justify-center"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></li></a>
+                        <a href=""><li class="flex items-center justify-center"><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false"></span></li></a>
+                        <a href=""><li class="flex items-center justify-center"><span class="iconify" data-icon="ant-design:youtube-filled" data-inline="false"></span></li></a>
+                        <a href=""><li class="flex items-center justify-center"><span class="iconify" data-icon="mdi:signal-variant" data-inline="false"></span></li></a>
+                    </ul>
+                </div>
+                <div class="date flex items-center">
+                    <svg width="17.5" height="20" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7857 3.125V3.625H17.2857H19.6429C20.6707 3.625 21.5 4.45363 21.5 5.46875V7.22656C21.5 7.27 21.4614 7.3125 21.4107 7.3125H11H0.589286C0.538631 7.3125 0.5 7.27 0.5 7.22656V5.46875C0.5 4.45363 1.32926 3.625 2.35714 3.625H4.71429H5.21429V3.125V0.585938C5.21429 0.542496 5.25292 0.5 5.30357 0.5H7.26786C7.31851 0.5 7.35714 0.542496 7.35714 0.585938V3.125V3.625H7.85714H14.1429H14.6429V3.125V0.585938C14.6429 0.542497 14.6815 0.5 14.7321 0.5H16.6964C16.7471 0.5 16.7857 0.542496 16.7857 0.585938V3.125ZM21.4107 9.875C21.4614 9.875 21.5 9.9175 21.5 9.96094V22.6562C21.5 23.6714 20.6707 24.5 19.6429 24.5H2.35714C1.32926 24.5 0.5 23.6714 0.5 22.6562V9.96094C0.5 9.9175 0.538631 9.875 0.589286 9.875H21.4107Z" stroke="white"/>
+                    </svg>
+                    <span class="text-lg font-normal text-white">11.04.2021</span>
+                    <span class="vertical_line"></span>
+                    <span class="text-lg font-normal text-white">21:13:02</span>
+                </div>
+                <div class="date">
+                    <a class="text-lg font-normal text-white hover:text-gray-300" href="">Davlat ramzlari</a>
+                </div>
+            </div>
+
+            <div class="nav-col-2 flex items-center">
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <button @click="open = !open" class="flex flex-row text-lg font-normal text-white items-center w-full  bg-transparent  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-100  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                      <span style="font-family: Roboto;">O'zbekcha</span>
+                      <svg fill="currentColor" viewBox="0 0 15 15" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+                        <div class="bg-white rounded-md shadow-sm">
+                            <div class="grid grid-cols-1 md:grid-cols-1 ">
+                            <a class="p-2" href="#">                            
+                                <div class="">
+                                <p class="">O'zbekcha</p>
+                                </div>
+                            </a>
+            
+                            <a class="p-2" href="#">
+                                <div class="">
+                                <p class="">Inglizcha</p>
+                                </div>
+                            </a>       
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vertical_line"></div>
+                
+                <div>
+                    <a class="flex flex-row text-lg font-normal text-white items-center" href="">
+                        <svg width="22" height="28" viewBox="0 0 30 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.52099 11.3566L8.5209 11.3567C8.10191 11.7821 8.1106 12.4765 8.53839 12.893L8.53842 12.893L13.9173 18.1506L13.9601 18.1925H13.9002H1.07131C0.491695 18.1925 0.0244141 18.671 0.0244141 19.2672V20.7328C0.0244141 21.329 0.491695 21.8075 1.07131 21.8075H13.9002H13.9601L13.9173 21.8494L8.53848 27.1069L8.53842 27.107M8.52099 11.3566L8.5035 28.6604C8.07944 28.2253 8.08837 27.5155 8.52136 27.0895L8.53842 27.107M8.52099 11.3566L9.51194 10.3399C9.92201 9.91919 10.5846 9.91933 10.9901 10.3398L10.9902 10.3399L19.6678 19.2385C20.0782 19.6595 20.0781 20.3405 19.6679 20.7569L19.6678 20.7569L10.9902 29.6601C10.5801 30.0808 9.91751 30.0807 9.51203 29.6602L9.51194 29.6601L8.52099 28.6434C8.10636 28.218 8.11503 27.5235 8.53842 27.107M8.52099 11.3566L8.53842 27.107M8.5035 11.3396L9.49446 10.3229C9.91406 9.89237 10.5926 9.89237 11.0077 10.3229L19.6853 19.2214C20.1049 19.6519 20.1049 20.3481 19.6853 20.774L8.5035 11.3396Z" fill="white" stroke="white" stroke-width="0.0488281"/>
+                            <path d="M10.0001 2H27.0001C27.5524 2 28.0001 2.44772 28.0001 3V35C28.0001 35.5523 27.5524 36 27.0001 36H10.0001" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                        </svg>
+                        Davlat ramzlari
+                            
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="main-nav relative  w-full h-40">
+        <div class="bg-img">
+            <img src="./images/splash-2.png" alt="">
+        </div>
+        <div class="container mx-auto flex justify-between">
+            <div class="logo-container flex items-center">
+               
+                <img src="./images/logo.png" alt="">
+                
+                <div class="logo-item flex-shrink-0">
+                    <h1 class=" font-bold">OYINA</h1>
+                    <p>ma’naviy-ma’rifiy portal</p>
+                </div>
+            </div>
+
+            <div class="climate">
+                
+
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="end-nav relative w-full ">
+        <div class="mx-auto flex justify-between container">
+            <div class="nav-section">
+                <ul class="flex text-lg">
+                    <li><a class="" href="">Asosiy sahifa <div class="active line-bottom "></div></a></li>
+                    <li><a class=" " href="">Rasmiy hujjatlar <div class="line-bottom "></div></a></li>
+                    <li><a class=" " href="">Mediateka <div class="line-bottom "></div></a></li>
+                    <li><a class=" " href="">Kutubxona <div class="line-bottom "></div></a></li>
+                    <li><a class=" " href="">Bilasizmi... <div class="line-bottom "></div></a></li>
+                    <li><a class=" " href="">E'lon <div class="line-bottom "></div></a></li>
+                </ul>
+            </div>
+            <div class="nav-search flex items-center">
+                <div class="search-box flex items-center">
+                    <button class="btn-search flex justify-center items-center">
+                        <span class="iconify" data-icon="fa-solid:search" data-inline="false"></span>
+                    </button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+                
+                <a href="" class="hamburber flex flex-col items-center justify-center relative ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

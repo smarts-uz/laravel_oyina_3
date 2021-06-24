@@ -15,13 +15,15 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/tailwind.output.css') }}" />
         <link rel="stylesheet" href="./css/main.css">
-        
+
+        <link rel="stylesheet" type="text/css" href="./css/splide.min.css">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	
+	    
         
         @livewireStyles
 
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        
     </head>
     <body class="font-sans antialiased">
 
@@ -35,4 +37,12 @@
 
         @livewireScripts
     </body>
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script type="text/javascript" src="./js/splide.min.js"></script>
+    <script type="text/javascript" src="./js/splide.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    
 </html>

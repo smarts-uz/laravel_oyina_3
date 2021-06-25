@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- Yangiliklar section --}}
   <section>
     <div style="background: #EFFFF5;" id="filtercontainer">
       <div class="splide container mx-auto flex justify-between">
@@ -123,6 +124,8 @@
     </div>
   </section>
 
+
+  {{-- Second section --}}
   <section class="section-two container mx-auto flex">
     <div class="section-two-content-one">
       <div class="news-one">
@@ -297,6 +300,358 @@
         
 
       </div>
+    </div>
+  </section>
+
+
+  {{-- Media section --}}
+  <section class="media">
+    
+    <div class="container mx-auto flex items-center justify-between">
+      <div id="filters-media" class="filters-media flex">
+        <button class="filter-option active-1" data-filter="video" onclick=filtervidfoto(event)>Videolavhalar <div class="div-bootom-line"></div></button>
+        <button class="filter-option"  data-filter="foto" onclick=filtervidfoto(event)>Fotolavhalar <div class="div-bootom-line"></div></button>
+      </div>
+      <a href="#" class="all-media">Barchasi</a>
+    </div>
+    <div class="flex flex-row items-center">
+      <div class="transform">MEDIA</div>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide video">
+              <a class="relative block" >
+                <img src="../images/video1.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>Abdulla Qodiriy tavalludiga 127 yil. Adib
+                yashagan uyida xotira kechasi bo‘lib o‘tdi </p>
+
+              
+              
+            </li>
+            <li class="glide__slide video">
+              <a href="#" class="relative block">
+                <img src="../images/video2.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>Namangan viloyatida “Ma’naviyat festivali”
+                ga tayyorgarlik ishlari yuzasidan seminar ... </p>
+            </li>
+            <li class="glide__slide video">
+              <a href="#" class="relative block">
+                <img src="../images/video3.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>O’zbekiston Qahramoni Lolaxon Muradova
+                bilan suhbat </p>
+            </li>
+            <li class="glide__slide video">
+              <a href="#" class="relative block">
+                <img src="../images/video4.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>Abdulla Qodiriy tavalludiga 127 yil. Adib
+                yashagan uyida xotira kechasi bo‘lib o‘tdi </p>
+            </li>
+            <li class="glide__slide video">
+              <a href="#" class="relative block">
+                <img src="../images/video1.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>Abdulla Qodiriy tavalludiga 127 yil. Adib
+                yashagan uyida xotira kechasi bo‘lib o‘tdi </p>
+            </li>
+            <li class="glide__slide video">
+              <a href="#" class="relative block">
+                <img src="../images/video1.png" alt="">
+                <div class="play-icon">
+                  <svg width="70" height="70" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.75" d="M31.0041 61.4717L31.0125 61.4671L31.0208 61.4623L59.3993 45.1769C63.0612 43.1352 63.0529 37.8642 59.4198 35.8024L31.0534 18.557L31.0273 18.5411L31.0006 18.5263C27.4509 16.5617 23.0161 19.0987 23.0161 23.2258V56.7742C23.0161 60.9223 27.4732 63.4383 31.0041 61.4717ZM1.5 40C1.5 18.7317 18.7317 1.5 40 1.5C61.2683 1.5 78.5 18.7317 78.5 40C78.5 61.2683 61.2683 78.5 40 78.5C18.7317 78.5 1.5 61.2683 1.5 40Z" stroke="white" stroke-width="3"/>
+                  </svg> 
+                </div>
+              </a>
+              <div class="media-date flex items-center">
+                <span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span>
+                <span>08.04.2021</span>
+                
+              </div>
+              <p>Abdulla Qodiriy tavalludiga 127 yil. Adib
+                yashagan uyida xotira kechasi bo‘lib o‘tdi </p>
+            </li>
+
+            <li class="glide__slide foto">
+              <a href="#" class="relative block photos">
+                <img src="../images/photo1.png" alt="">
+                
+              </a>
+            </li>
+            <li class="glide__slide foto">
+              <a href="#" class="relative block photos">
+                <img src="../images/photo2.png" alt="">
+              </a>
+            </li>
+            <li class="glide__slide foto">
+              <a href="#" class="relative block photos">
+                <img src="../images/photo3.png" alt="">
+              </a>
+            </li>
+            <li class="glide__slide foto">
+              <a href="#" class="relative block photos">
+                <img src="../images/photo4.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>   
+  </section>
+
+  {{-- Ilm-fan yangiliklar section --}}
+
+  <section class="container mx-auto section-three flex ">
+    <div class="section-three-first-content">
+      <div class="section-three-first-content-head-one">
+        <div class="section-three-first-content-head-text flex items-center justify-between">
+          <h1 class="">Ilm-fan yangiliklari</h1>
+          <a href="#">Barchasi</a>
+        </div>
+        <div class="line-gradient-four"></div>
+        <div class="section-three-cards-two flex">
+          <a href="#" class="cards-item">
+            <img src="../images/img6.png" alt="">
+            <span class="bookmark3"><span class=" iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span></span>
+            <span class="cards-icon flex items-center text-white"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>    
+            <p class="text-white">Xalq ta’limi vazirligi
+              “Yangi O’zbekiston
+              ustozlari” loyihasini
+              e’lon qiladi</p>
+          </a>
+          <a href="#" class="cards-item">
+            <img src="../images/img7.png" alt="">
+            <span class="bookmark3"><span class=" iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span></span>
+            <span class="cards-icon flex items-center text-white"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>    
+            <p class="text-white">Muhammad
+              al-Xorazmiy
+              nomidagi Toshkent
+              axborot
+              texnologiyalari ...</p>
+          </a>
+          <a href="#" class="cards-item">
+            <img src="../images/img8.png" alt="">
+            <span class="bookmark3"><span class=" iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span></span>
+            <span class="cards-icon flex items-center text-white"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>    
+            <p class="text-white">IT park va Toshkent
+              shahridagi Singapur
+              Menejmentni
+              Rivojlantirish Instituti
+              xalqaro ilmiy-amaliy..</p>
+          </a>
+          <a href="#" class="cards-item">
+            <img src="../images/img9.png" alt="">
+            <span class="bookmark3"><span class=" iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span></span>
+            <span class="cards-icon flex items-center text-white"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>    
+            <p class="text-white">Olimlar texnogen
+              chiqindidan mis, oltin
+              va kumush ajratib
+              olishga erishdi.</p>
+          </a>
+        </div>
+
+      </div> 
+      
+      <div class="section-three-first-content-head-two">
+        <div class="section-three-first-content-head-text flex items-center justify-between">
+          <h1 class="">Yangi me’yoriy hujjatlar</h1>
+          <a href="#">Barchasi</a>
+        </div>
+        <div class="line-gradient-four"></div>
+
+        <div class="section-three-cards">
+          <a href="#" class="cards-flag flex flex-row justify-center items-center align-middle">
+            <div class="gerb-img">
+              <img src="./images/gerb.png" alt="Gerb">
+            </div>
+            <p>O’zbekiston Respublikasi
+              fuqarolariga xorijiy davlat hududida
+              yashash uchun mablag’larsiz
+              qolgan taqdirda, moliyaviy yordam
+              ko’rsatish tartibi to’g’risidagi
+              nizomni tasdiqlash haqida</p>
+            </a>
+          <a href="#" class="cards-flag flex flex-row justify-center items-center align-middle">
+            <div class="gerb-img">
+              <img src="./images/gerb.png" alt="Gerb">
+            </div>
+            <p>Turizm va sport vazirligi faoliyatini
+              tashkil etish to’g’risida</p>
+            </a>
+          <a href="#" class="cards-flag flex flex-row justify-center items-center align-middle">
+            <div class="gerb-img">
+              <img src="./images/gerb.png" alt="Gerb">
+            </div>
+            <p>Ma’naviy-ma’rifiy ishlar tizimini
+              tubdan takomillashtirish
+              chora-tadbirlari to’g’risida</p>
+            </a>
+          <a href="#" class="cards-flag flex flex-row justify-center items-center align-middle">
+            <div class="gerb-img">
+              <img src="./images/gerb.png" alt="Gerb">
+            </div>
+            <p>Ma’naviyat va ijodni
+              qo’llab-quvvatlash maqsadli
+              jamg’armasini tashkil etish
+              to’g’risida</p>
+            </a>
+
+        </div>
+
+      </div> 
+
+    </div>
+    <div class="section-three-second-content">
+      <div class="book-layer flex">
+        <div class="layer-one">
+          <span class="layer-one-text flex items-center"><span class="iconify" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Kun tarixi</span>
+          <h1>27 iyun</h1>
+        </div>
+        <div class="layer-one">
+          <span class="layer-one-text">Bugun</span>
+          <p>906 yil Turkistonda birinchi milliy gazeta Taraqqiy chop etildi.</p>
+
+        </div>
+      </div>
+      <div class="section-three-second-content-main">
+        <div class="second-content-head flex items-center justify-between">
+          <h1 class="">Ko‘p o‘qilgan</h1>
+          <a href="#">Barchasi</a>
+        </div>
+        <div class="line-gradient"></div>
+        <div class="second-content-body flex">
+          <div class="img-content relative">
+            <img src="../images/img10.png" alt="">
+            <span class="eye-review flex"><span class="iconify" data-icon="mdi:eye" data-inline="false"></span> 4874</span>
+          </div>
+          <div class="text-content-second">
+            <div class="icon-text flex items-center justify-between align-middle">
+              <p class="bell flex items-center align-middle"><span class="iconify" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Siyosat</p>
+              <div class="date-icons flex items-center">
+                <span class="bell2 flex items-center"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>
+                
+              </div>
+            </div>
+            <a class="" href="#">Sharq mamlakatlarining raqamli
+              iqtisodiyotga o‘tish tajribasi:
+              imkoniyat va muammolar
+              </a>
+          </div>
+        </div>
+        <div class="line-hr"></div>
+        <div class="second-content-body flex">
+          <div class="img-content relative">
+            <img src="../images/img11.png" alt="">
+            <span class="eye-review flex"><span class="iconify" data-icon="mdi:eye" data-inline="false"></span> 4874</span>
+          </div>
+          <div class="text-content-second">
+            <div class="icon-text flex items-center justify-between align-middle">
+              <p class="bell flex items-center align-middle"><span class="iconify" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Yoshlar</p>
+              <div class="date-icons flex items-center">
+                <span class="bell2 flex items-center"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>
+                
+              </div>
+            </div>
+            <a class="" href="#">Kitob va kitobxonlik - inson
+              ma’naviyati ko’zgusi</a>
+          </div>
+        </div>
+        <div class="line-hr"></div>
+        <div class="second-content-body flex">
+          <div class="img-content relative">
+            <img src="../images/img12.png" alt="">
+            <span class="eye-review flex"><span class="iconify" data-icon="mdi:eye" data-inline="false"></span> 4874</span>
+
+          </div>
+          <div class="text-content-second">
+            <div class="icon-text flex items-center justify-between align-middle">
+              <p class="bell flex items-center align-middle"><span class="iconify" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Ta'lim</p>
+              <div class="date-icons flex items-center">
+                <span class="bell2 flex items-center"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>
+                
+              </div>
+            </div>
+            <a class="" href="#">Xalq ta’limi vaziri karmanadagi
+              maktablar faoliyati bilan tanishib,
+              bitiruvchilar bilan suhbatlashdi
+              </a>
+          </div>
+        </div>
+        <div class="line-hr"></div>
+        <div class="second-content-body flex">
+          <div class="img-content relative">
+            <img src="../images/img13.png" alt="">
+            <span class="eye-review flex"><span class="iconify" data-icon="mdi:eye" data-inline="false"></span> 4874</span>
+          </div>
+          <div class="text-content-second">
+            <div class="icon-text flex items-center justify-between align-middle">
+              <p class="bell flex items-center align-middle"><span class="iconify" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Ma'naviyat</p>
+              <div class="date-icons flex items-center">
+                <span class="bell2 flex items-center"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 08.04.2021</span>
+                
+              </div>
+            </div>
+            <a class="" href="#">Sohibqiron Amir Temur - adolat va
+              qudrat timsoli</a>
+          </div>
+        </div>
+
+      </div>
+
+      
     </div>
   </section>
 

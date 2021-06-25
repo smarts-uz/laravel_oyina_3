@@ -18,7 +18,9 @@
 
         <link rel="stylesheet" type="text/css" href="./css/splide.min.css">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-	
+	    <link rel="stylesheet" type="text/css" href="./css/glide.core.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/glide.theme.min.css">
+        
 	    
         
         @livewireStyles
@@ -42,7 +44,10 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script type="text/javascript" src="./js/splide.min.js"></script>
     <script type="text/javascript" src="./js/splide.js"></script>
+    <script type="text/javascript" src="./js/glide.min.js"></script>
+    <script type="text/javascript" src="./js/glide.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
-
+    
+    
     
 </html>

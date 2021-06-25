@@ -7,51 +7,46 @@ new Splide( '.splide', {
     start: 0,
 } ).mount();
 
-// filter
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
+var glide = new Glide('.glide', {
+  rewind: false,
+  startAt: 2,
+  perView: 4,
+  focusAt: 2,
+  gap: 30
+})
+glide.mount()
 
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
+
+
+
+
+
+var btnContainer = document.getElementById("filters-media");
+var btns = btnContainer.getElementsByClassName("filter-option");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("active-1");
+    current[0].className = current[0].className.replace(" active-1", "");
+    this.className += " active-1";
   });
 }
+
+
+
+
+function filtervidfoto(e) {
+    const videos = document.querySelectorAll(".glide__slides li"); // select all animal divs
+    let filter = e.target.dataset.filter; // grab the value in the event target's data-filter attribute
+  
+    videos.forEach(vid => {
+      vid.classList.contains(filter) // does the vid have the filter in its class list?
+      ?  vid.classList.remove('hidden') // if yes, make sure .hidden is not applied
+      : vid.classList.add('hidden'); // if no, apply .hidden
+    });
+  };
+
+
+
+  

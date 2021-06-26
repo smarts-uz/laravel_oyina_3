@@ -20,6 +20,10 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 	    <link rel="stylesheet" type="text/css" href="./css/glide.core.min.css">
         <link rel="stylesheet" type="text/css" href="./css/glide.theme.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         
 	    
         
@@ -47,6 +51,7 @@
     <script type="text/javascript" src="./js/glide.min.js"></script>
     <script type="text/javascript" src="./js/glide.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    
     
     
     

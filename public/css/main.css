@@ -856,22 +856,21 @@ section.media{
     opacity: 1;
 }
 
-.media .all-media{
+.media .all-media, .scholars .all-media{
     font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 0.9rem;
-/* identical to box height */
-/* white */
-color: #FFFFFF;
-padding: 0.3rem 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    /* identical to box height */
+    /* white */
+    color: #FFFFFF;
+    padding: 0.2rem 1.5rem;
+    border: 1px solid rgb(255,255,255,0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
 
-border: 1px solid rgb(255,255,255,0.5);
-box-sizing: border-box;
-border-radius: 5px;
-margin-bottom: 1rem;
 }
-.media .all-media:hover{
+.media .all-media:hover, .scholars .all-media:hover{
     border: 1px solid rgb(255,255,255,1);
 }
 .hidden {
@@ -1210,9 +1209,123 @@ color: #1EB980;
 }
 
 
+/* Section ancestors sliders*/
+
+section.scholars{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgb(30,185,128, 0.9), rgb(30,185,128, 0.9)), url(../images/layer2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+.scholars .transform{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 0.02em;  
+    transform: rotate(-90deg); 
+    width: 120px;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+
+.scholars .container{
+    border-bottom: 2.5px solid rgba(236,239,245, 0.2);
+}
+.scholars .filters-scholars{
+    column-gap: 5.6rem;
+}
+.scholars .filters-scholars button{
+    outline: none; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    /* white */
+    color: #FFFFFF;
+    opacity: 0.5; 
+    position: relative;
+    padding: 6px 0;
+}
+.scholars .filters-scholars button:hover{
+    opacity: 1;
+}
+.scholars .filters-scholars button.active-2{
+     opacity: 1;
+}
+.div-bootom-line-scholars{
+    width: 80%;
+    height: 2.5px;
+    background-color: #fff;
+    margin-top: 6px;
+    position: absolute;
+    opacity: 0;
+}
+.scholars .filters-scholars button.active-2 > .div-bootom-line-scholars{
+    opacity: 1;
+}
+.scholars .filters-scholars button:hover > .div-bootom-line-scholars{
+    opacity: 1;
+}
+.mySwiper{
+    padding: 1.5rem 0 !important;
+}
+.mySwiper .swiper-slide{
+    width: 178.613px !important;
+}
+
+.mySwiper .swiper-slide .scholars-img{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 50%;
+    padding: 0.5em;
+    border: 4px solid rgb(189,157,77);
+    overflow: hidden;
+}
+.mySwiper .swiper-slide .scholars-img img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mySwiper .swiper-slide .cholars-text{
+    margin-top: 0.75rem;
+}
+.mySwiper .swiper-slide .cholars-text p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3;
+    text-align: center;
+    /* white */
+
+    color: #FFFFFF;
+}
+.mySwiper .swiper-slide a:hover p{
+     text-decoration: underline;
+     opacity: 0.8;
+}
+
+
+
 
 
 /* Section 5 */
+.section-five{
+    margin: 2.5rem auto;
+}
 .interview-cards{
     column-gap: 2em;
    

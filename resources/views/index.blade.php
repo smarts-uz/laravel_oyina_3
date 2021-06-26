@@ -425,23 +425,23 @@
                 yashagan uyida xotira kechasi bo‘lib o‘tdi </p>
             </li>
 
-            <li class="glide__slide foto">
+            <li class="glide__slide foto hidden">
               <a href="#" class="relative block photos">
                 <img src="../images/photo1.png" alt="">
                 
               </a>
             </li>
-            <li class="glide__slide foto">
+            <li class="glide__slide foto hidden">
               <a href="#" class="relative block photos">
                 <img src="../images/photo2.png" alt="">
               </a>
             </li>
-            <li class="glide__slide foto">
+            <li class="glide__slide foto hidden">
               <a href="#" class="relative block photos">
                 <img src="../images/photo3.png" alt="">
               </a>
             </li>
-            <li class="glide__slide foto">
+            <li class="glide__slide foto hidden">
               <a href="#" class="relative block photos">
                 <img src="../images/photo4.png" alt="">
               </a>
@@ -654,6 +654,9 @@
       
     </div>
   </section>
+
+  {{-- Section Buyuklar hayoti slider --}}
+  @include('components.scholars')
 
   {{-- Section five --}}
   <section class="section-five container mx-auto">

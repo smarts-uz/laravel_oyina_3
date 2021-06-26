@@ -32,12 +32,21 @@
         
     </head>
     <body class="font-sans antialiased">
+        <a id="headerpage"></a>
 
         @include('components.navbar')
 
         @yield('content')
 
         @include('components.footer')
+        <a href="#headerpage"  class="topbtn " id="myBtn" title="Go to top">
+            <p class="w-full h-full flex items-center justify-center align-center"><svg width="25" height="18" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32.6525 22L18.5 8.40216L4.3475 22L3.44872e-06 17.8138L18.5 -2.19738e-06L37 17.8138L32.6525 22Z" fill="white"/>
+                </svg>
+                </p>
+            
+		
+        </a>
        
        
 
@@ -46,6 +55,7 @@
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/splide.min.js"></script>
     <script type="text/javascript" src="./js/splide.js"></script>
     <script type="text/javascript" src="./js/glide.min.js"></script>

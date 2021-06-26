@@ -2,6 +2,24 @@
     margin: 0;
     padding: 0;
 }
+.topbtn{
+    width: 3.4rem;
+    height: 3.4rem;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+
+    /* green */
+
+    background: #1EB980;
+    /* white */
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 1;
+    display: none;
+}
+
 body{
     overflow-x: hidden;
 }

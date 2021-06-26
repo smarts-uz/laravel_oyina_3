@@ -856,7 +856,7 @@ section.media{
     opacity: 1;
 }
 
-.media .all-media, .scholars .all-media{
+.media .all-media, .scholars .all-media, .books .all-books{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -870,7 +870,7 @@ section.media{
     border-radius: 5px;
 
 }
-.media .all-media:hover, .scholars .all-media:hover{
+.media .all-media:hover, .scholars .all-media:hover, .books .all-books:hover{
     border: 1px solid rgb(255,255,255,1);
 }
 .hidden {
@@ -1316,6 +1316,132 @@ section.scholars{
 .mySwiper .swiper-slide a:hover p{
      text-decoration: underline;
      opacity: 0.8;
+}
+
+
+
+
+/* section books slider */
+section.books{
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgb(30,185,128, 0.9), rgb(30,185,128, 0.9)), url(../images/layer1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+.books .transform{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+line-height: 1;
+    letter-spacing: 0.02em;  
+    transform: rotate(-90deg); 
+    width: 120px;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    margin-top: 9rem;
+    
+}
+
+.books .container{
+    border-bottom: 2.5px solid rgba(236,239,245, 0.2);
+}
+.books .filters-books{
+    column-gap: 5.6rem;
+}
+.books .filters-books button{
+    outline: none; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 37px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    /* white */
+    color: #FFFFFF;
+    opacity: 1; 
+    position: relative;
+    padding: 6px 0;
+}
+.books .filters-books button.active-3{
+     opacity: 1;
+}
+.div-bootom-line-books{
+    width: 80%;
+    height: 2.5px;
+    background-color: #fff;
+    margin-top: 6px;
+    position: absolute;
+    opacity: 0;
+}
+.books .filters-books button.active-3 > .div-bootom-line-books{
+    opacity: 1;
+}
+.booksslide .swiper-slide{
+    width: 12.5rem !important;
+    margin-top: 2rem;
+}
+.booksslide .swiper-slide .slide-outline{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 1rem;
+    padding: 1.4rem;
+    overflow: hidden;
+    background-color: rgb(255,255,255,0.3);
+}
+.booksslide .swiper-slide .back-line{
+    top: 50%;
+    right: 6%;
+    transform: translate(0%, -50%);
+    width: 2.25rem;
+    height: 8.25rem;
+    border-radius: 1rem;
+    background: #8AB3FF;
+    border-radius: 20px;
+    z-index: -1;
+}
+.booksslide .swiper-slide .slide-outline .slide-inline{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2rem 1.2rem;
+    background: #B7B0B8;
+}
+.booksslide .swiper-slide .slide-outline .slide-inline img{
+    min-width: 100%;
+    min-height: 100%;
+}
+.booksslide .swiper-slide .slide-star{
+    position: relative;
+    width: 100%;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+.booksslide .swiper-slide .slide-star img{
+    width: 1.55rem;
+    height: 1.55rem;
+}
+.booksslide .swiper-slide .slide-text p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.05rem;
+    line-height: 1;
+    /* identical to box height */
+
+
+    /* white */
+
+    color: #FFFFFF;
+
+    opacity: 0.75;
 }
 
 

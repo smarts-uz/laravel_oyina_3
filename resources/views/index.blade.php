@@ -658,6 +658,11 @@
   {{-- Section Buyuklar hayoti slider --}}
   @include('components.scholars')
 
+
+
+  {{-- Section book slide --}}
+  @include('components.bookslide')
+
   {{-- Section five --}}
   <section class="section-five container mx-auto">
     <div class="section-three-first-content-head-text flex items-center justify-between">

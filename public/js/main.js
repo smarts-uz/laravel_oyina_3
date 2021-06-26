@@ -78,3 +78,11 @@ function filterscholars(e) {
     // cssMode: true,
     simulateTouch: true,
   });
+
+
+  var swiperbooks = new Swiper(".booksslide", {
+    slidesPerView: 6.1,
+    spaceBetween: 30,
+    // cssMode: true,
+    simulateTouch: true,
+  });

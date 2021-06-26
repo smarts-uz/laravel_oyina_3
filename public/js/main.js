@@ -62,7 +62,7 @@ for (var i = 0; i < btns1.length; i++) {
 
 
 function filterscholars(e) {
-    const scholars = document.querySelectorAll(".swiper-wrapper .swiper-slide"); // select all animal divs
+    const scholars = document.querySelectorAll(".mySwiper .swiper-wrapper .swiper-slide"); // select all animal divs
     let filter1 = e.target.dataset.filter; // grab the value in the event target's data-filter attribute
   
     scholars.forEach(scholar => {
@@ -83,6 +83,41 @@ function filterscholars(e) {
   var swiperbooks = new Swiper(".booksslide", {
     slidesPerView: 6.1,
     spaceBetween: 30,
+    // cssMode: true,
+    simulateTouch: true,
+  });
+
+
+
+  
+//   Relevance filter
+var btnContainer2 = document.getElementById("filters-relevance");
+var btns2 = btnContainer2.getElementsByClassName("filter-option-relevance");
+for (var i = 0; i < btns2.length; i++) {
+  btns2[i].addEventListener("click", function() {
+    var current2 = document.getElementsByClassName("active-4");
+    current2[0].className = current2[0].className.replace(" active-4", "");
+    this.className += " active-4";
+  });
+}
+
+
+
+
+function filterrelevance(e) {
+    const relevance = document.querySelectorAll(".relevance-slide .swiper-wrapper .swiper-slide"); // select all animal divs
+    let filter2 = e.target.dataset.filter; // grab the value in the event target's data-filter attribute
+  
+    relevance.forEach(rel => {
+      rel.classList.contains(filter2) // does the rel have the filter in its class list?
+      ?  rel.classList.remove('hidden') // if yes, make sure .hidden is not applied
+      : rel.classList.add('hidden'); // if no, apply .hidden
+    });
+  };
+  
+  var relevanceswiper = new Swiper(".relevance-slide", {
+    slidesPerView: 3.5,
+    spaceBetween: 20,
     // cssMode: true,
     simulateTouch: true,
   });

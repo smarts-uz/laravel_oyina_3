@@ -720,6 +720,10 @@
 
   </section>
 
+
+  {{-- Section Dolzarb sider --}}
+  @include('components.relevance')
+
 {{-- section 6 havolalar --}}
   <section class="section-six container mx-auto">
     <div class="section-three-first-content-head-text flex items-center justify-between">

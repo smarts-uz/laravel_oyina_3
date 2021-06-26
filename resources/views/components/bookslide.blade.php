@@ -32,8 +32,9 @@
                   <img src="../images/star.png" alt="">
               </div>
               <div class="slide-text">
-                  <p>ISLOM Ensiklopediyasi</p>
+                  <a href="">ISLOM Ensiklopediyasi</a>
               </div>
+        
             
           </div>
 
@@ -58,8 +59,8 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>Temuriylar tarixi
-                    davlat muzeyi durdo ...</p>
+                <a href="#">Temuriylar tarixi
+                    davlat muzeyi durdo ...</a>
             </div>
           
         </div>
@@ -85,7 +86,7 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>Rajabiynoma</p>
+                <a href="#">Rajabiynoma</a>
             </div>
           
         </div>
@@ -111,8 +112,8 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>To‘lepbergen
-                    Qaipbergenov</p>
+                <a href="#">To‘lepbergen
+                    Qaipbergenov</a>
             </div>
           
         </div>
@@ -138,7 +139,7 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>Jahon falsafasi qomusi</p>
+                <a href="#">Jahon falsafasi qomusi</a>
             </div>
           
         </div>
@@ -164,7 +165,7 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>Munaqqash tuyg‘ular</p>
+                <a href="#">Munaqqash tuyg‘ular</a>
             </div>
           
         </div>
@@ -190,7 +191,7 @@
                 <img src="../images/star.png" alt="">
             </div>
             <div class="slide-text">
-                <p>ISLOM Ensiklopediyasi</p>
+                <a href="#">ISLOM Ensiklopediyasi</a>
             </div>
           
         </div>

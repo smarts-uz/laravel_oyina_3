@@ -17,6 +17,9 @@
                       <img src="../images/books1.png" alt="">
                   </div>
                   <div class="back-line absolute"></div>
+                  <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
               </div>
               <div class="slide-star flex items-center">
                   <img src="../images/starfull.png" alt="">
@@ -40,6 +43,9 @@
                     <img src="../images/books2.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">
@@ -64,6 +70,9 @@
                     <img src="../images/books3.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">
@@ -87,6 +96,9 @@
                     <img src="../images/books4.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">
@@ -111,6 +123,9 @@
                     <img src="../images/books5.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">
@@ -134,6 +149,9 @@
                     <img src="../images/books6.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">
@@ -157,6 +175,9 @@
                     <img src="../images/books1.png" alt="">
                 </div>
                 <div class="back-line absolute"></div>
+                <div class="bookmark-books flex justify-center items-center absolute">
+                    <a href="#"><span class="iconify  text-white" data-icon="mdi:bookmark-outline" data-inline="false"></span> </a>
+                  </div>
             </div>
             <div class="slide-star flex items-center">
                 <img src="../images/starfull.png" alt="">

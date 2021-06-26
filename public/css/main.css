@@ -1434,16 +1434,24 @@ line-height: 1;
     font-weight: 500;
     font-size: 1.05rem;
     line-height: 1;
-    /* identical to box height */
-
-
-    /* white */
-
     color: #FFFFFF;
-
     opacity: 0.75;
 }
-
+.bookmark-books{
+    width: 2.4rem;
+    height: 2.4rem;
+    background: rgb(30,185,128, 0.4);
+    border-radius: 50%;
+    top: 0.7rem;
+    right: 0.7rem;
+}
+.bookmark-books .iconify{
+    width: 1.4rem;
+    height: 1.6rem;
+}
+.bookmark-books:hover{
+    background: rgb(30,185,128, 0.8);
+}
 
 
 

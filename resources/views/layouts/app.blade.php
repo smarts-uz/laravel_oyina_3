@@ -36,6 +36,8 @@
 
         @include('components.navbar')
 
+        @include('components.settings')
+
         @yield('content')
 
         @include('components.footer')
@@ -43,9 +45,7 @@
             <p class="w-full h-full flex items-center justify-center align-center"><svg width="25" height="18" viewBox="0 0 37 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M32.6525 22L18.5 8.40216L4.3475 22L3.44872e-06 17.8138L18.5 -2.19738e-06L37 17.8138L32.6525 22Z" fill="white"/>
                 </svg>
-                </p>
-            
-		
+            </p>
         </a>
        
        

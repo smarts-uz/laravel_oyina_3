@@ -660,11 +660,11 @@
 
 
   {{-- Section 4 Maqolalar --}}
-  <section class="article container mx-auto">
+  <section class="article container mx-auto flex ">
     <div class="article-content-one">
       <div class="article-content-one-head">
         <div class="article-content-one-head-text flex items-center justify-between">
-          <h1 class="">Ilm-fan yangiliklari</h1>
+          <h1 class="">Maqolalar</h1>
           <a href="#">Barchasi</a>
         </div>
         <div class="line-gradient-four"></div>
@@ -704,7 +704,13 @@
       </div> 
     </div>
 
-    <div class="article-content-two"></div>
+    <div class="article-content-two">
+      <div class="article-content-two-head-text flex items-center justify-between">
+        <h1 class="">Audio kitoblar</h1>
+        <a href="#">Barchasi</a>
+      </div>
+      <div class="line-gradient-audio"></div>
+    </div>
   </section>
 
 

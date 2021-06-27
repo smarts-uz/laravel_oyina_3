@@ -33,8 +33,8 @@
         <p class="text-white"><span class="iconify text-white" data-icon="ic:sharp-radio-button-checked" data-inline="false"></span> Siyosat</p>
 
         <div class="text-content">
-          <h1>Tadbirkorlarni qo‘llab-quvvatlash bo‘yicha qo‘shimcha
-            mexanizmlar yaratiladi</h1>
+         <a href=""> <h1>Tadbirkorlarni qo‘llab-quvvatlash bo‘yicha qo‘shimcha
+            mexanizmlar yaratiladi</h1></a>
             <div class="statics flex items-center">
               <span class="flex items-center"><span class="iconify" data-icon="mdi:clock-time-four-outline" data-inline="false"></span> 19:27 / 08.04.2021</span>
               <span class="flex items-center"><span class="iconify" data-icon="mdi:eye" data-inline="false"></span> 4878</span>
@@ -306,7 +306,9 @@
 
 
   {{-- Media section --}}
-  <section class="media">
+
+  @include('components.mediaslider')
+  {{-- <section class="media">
     
     <div class="container mx-auto flex items-center justify-between">
       <div id="filters-media" class="filters-media flex">
@@ -451,7 +453,7 @@
         </div>
       </div>
     </div>   
-  </section>
+  </section> --}}
 
   {{-- Ilm-fan yangiliklar section --}}
 

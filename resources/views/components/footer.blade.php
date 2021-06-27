@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-content container mx-auto ">
         <div class="footer-main flex flex-wrap">
-            <div class="footer-menus flex flex-1 flex-col flex-shrink">
+            <div class="footer-menus main-text-footer flex flex-1 flex-col flex-shrink">
                 <h1 class="text-white text-2xl">RESPUBLIKA MA’NAVIYAT VA
                     MA’RIFAT MARKAZI
                 </h1>
@@ -12,7 +12,7 @@
                 <a class="text-white  tracking-wide font-medium" href="">info@umail.uz</a>
             </div>
     
-            <div class="footer-menus flex-1  flex flex-col">
+            <div class="footer-menus main-text-footer flex-1  flex flex-col">
                 <h3 class="font-bold text-white leading-tight">Biz haqimizda</h3>
                 <a href="">Markaz haqida</a>
                 <a href="">Oyina portali haqida</a>

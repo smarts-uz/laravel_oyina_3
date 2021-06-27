@@ -31,14 +31,47 @@ new Splide( '.splide', {
 
 
 
-var glide = new Glide('.glide', {
-  rewind: false,
-  startAt: 2,
-  perView: 4,
-  focusAt: 2,
-  gap: 30
-})
-glide.mount();
+var mediaswiper = new Swiper(".mediaswipe", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // cssMode: true,
+  simulateTouch: true,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1536: {
+      slidesPerView: 3.5,
+      spaceBetween: 30
+    },
+    1920: {
+      slidesPerView: 3.5,
+      spaceBetween: 30
+    }
+  }
+
+});
 
 
 
@@ -57,7 +90,7 @@ for (var i = 0; i < btns.length; i++) {
 
 
 function filtervidfoto(e) {
-    const videos = document.querySelectorAll(".glide__slides li"); // select all animal divs
+    const videos = document.querySelectorAll(".mediaswipe .swiper-wrapper .swiper-slide"); // select all animal divs
     let filter = e.target.dataset.filter; // grab the value in the event target's data-filter attribute
   
     videos.forEach(vid => {
@@ -117,8 +150,12 @@ function filterscholars(e) {
         spaceBetween: 20
       },
       1024: {
-        slidesPerView: 5,
-        spaceBetween: 30
+        slidesPerView: 6,
+        spaceBetween: 20
+      },
+      1280: {
+        slidesPerView: 6,
+        spaceBetween: 20
       },
       1536: {
         slidesPerView: 6.85,
@@ -158,6 +195,10 @@ function filterscholars(e) {
         spaceBetween: 20
       },
       1024: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      },
+      1280: {
         slidesPerView: 5,
         spaceBetween: 20
       },
@@ -223,8 +264,12 @@ function filterrelevance(e) {
         spaceBetween: 20
       },
       1024: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1280: {
         slidesPerView: 3,
-        spaceBetween: 10
+        spaceBetween: 20
       },
       1536: {
         slidesPerView: 3.5,

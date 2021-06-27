@@ -5,6 +5,28 @@ new Splide( '.splide', {
 	perMove: 1,
     pagination: false,
     start: 0,
+
+    breakpoints: {
+      1920: {
+        perPage: 16,
+      },
+      1536: {
+        perPage: 11,
+      },
+      1280: {
+        perPage: 8,
+      },
+      1024: {
+        perPage: 6,
+      },
+      768: {
+        perPage: 5,
+      },
+      648: {
+        perPage: 3,
+      },
+    }
+
 } ).mount();
 
 
@@ -73,18 +95,81 @@ function filterscholars(e) {
   };
   
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 6.85,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 10,
     // cssMode: true,
     simulateTouch: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 30
+      },
+      1536: {
+        slidesPerView: 6.85,
+        spaceBetween: 30
+      },
+      1920: {
+        slidesPerView: 6.3,
+        spaceBetween: 30
+      }
+    }
+
   });
 
 
+
+
+
   var swiperbooks = new Swiper(".booksslide", {
-    slidesPerView: 6.1,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 10,
     // cssMode: true,
     simulateTouch: true,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      },
+      1536: {
+        slidesPerView: 6.1,
+        spaceBetween: 30
+      },
+      1920: {
+        slidesPerView: 6.1,
+        spaceBetween: 30
+      }
+    }
   });
 
 
@@ -116,10 +201,40 @@ function filterrelevance(e) {
   };
   
   var relevanceswiper = new Swiper(".relevance-slide", {
-    slidesPerView: 3.5,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 10,
     // cssMode: true,
     simulateTouch: true,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10
+      },
+      1536: {
+        slidesPerView: 3.5,
+        spaceBetween: 30
+      },
+      1920: {
+        slidesPerView: 3.5,
+        spaceBetween: 30
+      }
+    }
   });
 
 

@@ -18,6 +18,7 @@
             <li class="splide__slide"><a class="button" onclick="filterSelection('vatandish')">Vatandosh</a></li>
             <li class="splide__slide"><a class="button" onclick="filterSelection('dunyo')">Dunyo</a></li>
             <li class="splide__slide"><a class="button" onclick="filterSelection('tabassum')">Tabassum</a></li>
+            
           </ul>
         </div>
       </div>

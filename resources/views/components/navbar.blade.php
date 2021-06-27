@@ -26,28 +26,23 @@
             </div>
 
             <div class="nav-col-2 flex items-center">
-                <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                    <button @click="open = !open" class="flex flex-row text-lg font-normal text-white items-center w-full  bg-transparent  md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-100  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                      <span style="font-family: Roboto;">O'zbekcha</span>
-                      <svg fill="currentColor" viewBox="0 0 15 15" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <div x-data="{ dropdownOpen: false }" class="relative">
+                    <button @click="dropdownOpen = !dropdownOpen" class="relative  font-normal flex flex-row items-center gap-1 z-10 p-2 focus:outline-none">
+                       <span class="text-white text-lg">O'zbek</span>
+                        <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
                     </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
-                        <div class="bg-white rounded-md shadow-sm">
-                            <div class="grid grid-cols-1 md:grid-cols-1 ">
-                            <a class="p-2" href="#">                            
-                                <div class="">
-                                <p class="">O'zbekcha</p>
-                                </div>
-                            </a>
-            
-                            <a class="p-2" href="#">
-                                <div class="">
-                                <p class="">Inglizcha</p>
-                                </div>
-                            </a>       
-                            
-                            </div>
-                        </div>
+                  
+                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                  
+                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                        <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700  hover:bg-green-500 hover:text-white">
+                           O'zbekcha
+                        </a>
+                        <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-green-500 hover:text-white">
+                            Ruscha
+                        </a>
                     </div>
                 </div>
 
@@ -68,7 +63,7 @@
         </div>
     </div>
 
-    <div class="main-nav relative  w-full h-40">
+    <div class="main-nav relative  w-full">
         <div class="bg-img">
             <img src="./images/splash-2.png" alt="">
         </div>

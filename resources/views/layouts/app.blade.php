@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/tailwind.output.css') }}" />
         <link rel="stylesheet" href="./css/main.css">
 
@@ -61,6 +63,7 @@
     <script type="text/javascript" src="./js/glide.min.js"></script>
     <script type="text/javascript" src="./js/glide.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     
     
     
